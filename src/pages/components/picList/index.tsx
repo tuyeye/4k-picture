@@ -54,7 +54,15 @@ const PageChange: FC<any> = ({
   />
 );
 
-const page: FC<any> = ({ picList, dispatch, loading, resolving, classify }) => {
+const page: FC<any> = ({
+  picList,
+  dispatch,
+  loading,
+  resolving,
+  classify,
+  type,
+  serachStr,
+}) => {
   const { data, pageSize } = picList;
 
   const requestPage = async (page: number) => {
@@ -65,7 +73,8 @@ const page: FC<any> = ({ picList, dispatch, loading, resolving, classify }) => {
 
     if (resolving) payload.resolving = resolving;
     if (classify) payload.classify = classify;
-
+    if (type) payload.type = 'index';
+    if (serachStr) payload.serachStr = serachStr;
     await dispatch({
       type: `${namespace}/fetch`,
       payload,

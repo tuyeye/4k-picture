@@ -13,6 +13,9 @@ export default {
 
       let result = res.code === 0 ? res : { notfound: true };
 
+      document.title =
+        res.code === 0 ? `${res.info.title} - 彼岸花网` : '图片不存在';
+
       yield put({
         type: 'save',
         payload: result,

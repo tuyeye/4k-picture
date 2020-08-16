@@ -4,6 +4,8 @@ import { Card, Row, Col, Button, Result } from 'antd';
 import { DownloadOutlined } from '@ant-design/icons';
 import moment from 'moment';
 import { RenderPics } from '@/pages/components/picList/index';
+import { brands } from '@/pages/components/_layout';
+
 const namespace = 'detail';
 
 const page: FC<any> = ({
@@ -32,6 +34,11 @@ const page: FC<any> = ({
       )}
       {!notfound && (
         <>
+          {!loading &&
+            brands([
+              { to: info.resolving, title: `${info.resolving} 壁纸` },
+              { to: '#', title: info.title },
+            ])}
           <Row gutter={[16, 16]}>
             <Col xs={24} sm={24} md={18} lg={18} xl={18}>
               <Card

@@ -5,6 +5,7 @@ import { useParams } from 'umi';
 
 export default () => {
   const params: any = useParams();
+
   return (
     <Layout>
       <Detail id={params.id} />

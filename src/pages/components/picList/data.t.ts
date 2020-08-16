@@ -4,6 +4,7 @@ export interface picListKey {
   classify?: string; //分类
   pageSize: number; //分页数量
   pageNum: number; //页码
+  type?: string; //首页
 }
 
 export interface picItem {

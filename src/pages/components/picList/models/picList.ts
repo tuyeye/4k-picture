@@ -4,7 +4,7 @@ export default {
   namespace: 'picList',
   state: {
     data: [],
-    pageSize: 10,
+    pageSize: 30,
     pageNum: 0,
     total: 0,
   },
