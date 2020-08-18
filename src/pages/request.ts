@@ -1,7 +1,7 @@
 import { extend } from 'umi-request';
 import { notification } from 'antd';
 
-const baseUrl = 'https://localhost:5001/pic'; //末尾不含斜杠
+const baseUrl = 'http://api.sanqii.cn/pic'; //末尾不含斜杠
 
 const codeMessage: any = {
   200: '服务器成功返回请求的数据。',

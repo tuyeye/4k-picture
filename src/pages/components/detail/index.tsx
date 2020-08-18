@@ -58,6 +58,8 @@ const page: FC<any> = ({
                   size="large"
                   icon={<DownloadOutlined />}
                   style={{ marginBottom: '10px' }}
+                  href={`http://api.sanqii.cn/pic/download?id=${id}`}
+                  download
                 >
                   下载原图（全站限时免费）
                 </Button>
