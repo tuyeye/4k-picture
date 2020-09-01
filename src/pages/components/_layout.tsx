@@ -149,11 +149,15 @@ const page: FC<any> = ({
             ©{new Date().getFullYear()} 彼岸花网 All rights reserved.
             <Divider type="vertical" />
             <a href="http://jx.sanqii.cn" target="_blank">
-              涂叶解析
+              VIP 视频解析
             </a>
             <Divider type="vertical" />
             <a href="http://blog.sanqii.cn" target="_blank">
-              博客
+              作者博客
+            </a>
+            <Divider type="vertical" />
+            <a href="http://bt.sanqii.cn" target="_blank">
+              种子搜索神器
             </a>
           </p>
         </Footer>
